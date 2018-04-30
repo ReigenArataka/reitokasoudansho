@@ -1,6 +1,6 @@
 body {
 	background-image: url("http://i0.kym-cdn.com/photos/images/original/000/741/400/073.gif");
-	
+	background-size: cover;
 }
 
 .title1 {
@@ -9,21 +9,36 @@ body {
 	text-align: center;
 	text-shadow:
    -3px -3px 0 #000,  
-    3px -3px 0 #000,
-    -3px 3px 0 #000,
-     3px 3px 0 #000;
+    5px -5px 0 #000,
+    -5px 5px 0 #000,
+     5px 5px 0 #000;
 }
 .title2 {
 	font-size: 400px;
 	color: #FFFFFF;
 	text-align: center;
 	text-shadow:
-   -3px -3px 0 #000,  
-    3px -3px 0 #000,
-    -3px 3px 0 #000,
-     3px 3px 0 #000;
+   -5px -5px 0 #000,  
+    5px -5px 0 #000,
+    -5px 5px 0 #000,
+     5px 5px 0 #000;
 }
+.title3 {
+	font-size: 450px;
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow:
+   -5px -5px 0 #000,  
+    5px -5px 0 #000,
+    -5px 5px 0 #000,
+     5px 5px 0 #000;
+}
+
 .bgMusic {
 	display:none;
 	
+}
+.gif {
+	 display: block;
+    margin: 0 auto;
 }
