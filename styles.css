@@ -4,7 +4,12 @@ body {
 }
 
 .title1 {
+	font-size: 205px;
+	color: "#000000";
+	text-align: center;
+}
+.title2 {
 	font-size: 255px;
-	color: "#FFFFFF";
+	color: "#000000";
 	text-align: center;
 }
