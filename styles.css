@@ -5,11 +5,25 @@ body {
 
 .title1 {
 	font-size: 205px;
-	color: "#000000";
+	color: #FFFFFF;
 	text-align: center;
+	text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000;
 }
 .title2 {
-	font-size: 255px;
-	color: "#000000";
+	font-size: 400px;
+	color: #FFFFFF;
 	text-align: center;
+	text-shadow:
+   -3px -3px 0 #000,  
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+     3px 3px 0 #000;
+}
+.bgMusic {
+	display:none;
+	
 }
