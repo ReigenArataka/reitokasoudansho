@@ -2,3 +2,8 @@ body {
 	background-image: url("http://i0.kym-cdn.com/photos/images/original/000/741/400/073.gif");
 	
 }
+
+.title1 {
+	size: 255px;
+	color: "#000000";
+}
