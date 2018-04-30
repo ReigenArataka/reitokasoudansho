@@ -32,6 +32,8 @@ body {
     5px -5px 0 #000,
     -5px 5px 0 #000,
      5px 5px 0 #000;
+	 display: block;
+    margin: 0 auto;
 }
 
 .bgMusic {
