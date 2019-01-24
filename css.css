@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+body {
+	background-image: url("bg2.png");
+  background-repeat: repeat;
+	
+}
+
+.head{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.base1 {
+	width: 55%;
+	margin: 0 auto;
+	
+	
+}
+.welcome{
+	width: 600px;
+	height: 305px;
+	background-color:#f4dadb;
+	border: 1px solid white;
+	text-align:center;
+	font-size: 200%;
+	float: left;
+
+color: black;
+    text-shadow:
+    -2px -2px 0 #FFF,
+    2px -2px 0 #FFF,
+    -2px 2px 0 #FFF,
+    2px 2px 0 #FFF;  
+	
+}
+.reigenprofile {
+	float:left;
+	border: 2px solid red;
+	margin-left:25px;
+	
+}
+
+.base2{
+	clear:both;
+	width: 60%;
+	padding-top: 25px;
+	margin: 0 auto;
+	
+}
+
+.ghost {
+	float: left;
+	
+	
+}
+
+.poulter{
+	width: 530px;
+	height: 255px;
+	float:left;
+	background-color:#b3faec;
+	margin-left: 50px;
+	font-size: 170%;
+}
+
+.lovedone{
+	
+	width: 530px;
+	height: 225px;
+	float:left;
+	background-color:yellow;
+	margin-left: 10px;
+	font-size: 170%;
+	margin-top:15px;
+	animation:argh-my-eyes 1s infinite;
+}
+
+
+@-webkit-keyframes argh-my-eyes {
+    0%   { background-color: yellow; }
+    49% { background-color: yellow; }
+    50% { background-color: #2114d6; }
+    99% { background-color: #2114d6; }
+    100% { background-color: yellow; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: yellow; }
+    49% { background-color: yellow; }
+    50% { background-color: #2114d6; }
+    99% { background-color: #2114d6; }
+    100% { background-color: yellow; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: yellow; }
+    49% { background-color: yellow; }
+    50% { background-color: #2114d6; }
+    99% { background-color: #2114d6; }
+    100% { background-color: yellow; }
+  }
+
+	
+.base3{
+	
+	clear:both;
+	width: 65%;
+	padding-top: 8px;
+	margin: 0 auto;
+}
+.photography {
+	width: 530px;
+	height: 235px;
+	float:left;
+	background-color:#c9f3ab;
+	margin-left: 10px;
+	font-size: 210%;
+	
+}
+
+
+
+.stigma {
+	width: 530px;
+	height: 225px;
+	float:left;
+	background-color:#535554;
+	margin-left: 10px;
+	font-size: 180%;
+	
+}
+
+.base4 {
+	clear:both;
+	width: 65%;
+	padding-top: 8px;
+	margin: 0 auto;
+	
+}
+
+.stiff{
+	width: 580px;
+	height: 185px;
+	float:left;
+	background-color:#c89ce9;
+	margin-left: 10px;
+	font-size: 180%;
+	animation:argh-my-eyes2 1s infinite;
+}
+@-webkit-keyframes argh-my-eyes2 {
+    0%   { background-color: #c9f3ab; }
+    49% { background-color: #c9f3ab; }
+    50% { background-color: #c89ce9; }
+    99% { background-color: #c89ce9; }
+    100% { background-color: #c9f3ab; }
+  }
+  @-moz-keyframes argh-my-eyes2 {
+    0%   { background-color:#c9f3ab; }
+    49% { background-color: #c9f3ab; }
+    50% { background-color: #c89ce9; }
+    99% { background-color:#c89ce9; }
+    100% { background-color: #c9f3ab; }
+  }
+  @keyframes argh-my-eyes2 {
+    0%   { background-color: #c9f3ab; }
+    49% { background-color: #c9f3ab; }
+    50% { background-color: #c89ce9; }
+    99% { background-color: #c89ce9; }
+    100% { background-color: #c9f3ab; }
+  }
+.modern {
+	width: 530px;
+	height: 215px;
+	float:left;
+	background-color:#6f0b17;
+	margin-left: 10px;
+	font-size: 180%;
+	margin-bottom:25px;
+	
+	
+}
+
+.arrow {
+	width:25%;
+margin-left:85px;
+	
+}
+
+
+
+.ghost2{
+	float:right;
+		
+}
+.base5{
+	clear:both;
+	width: 65%;
+	padding-top: 8px;
+	margin: 0 auto;
+}
+
+.prices {
+	height:35%;
+	width:80%;
+	background-color:#eaecbd;
+	text-align:left;
+	padding-left: 20px;
+	padding-top: 20px;
+	
+	 display: flex;
+  justify-content: center;
+  align-items: center;
+  --borderWidth: 8px;
+
+  position: relative;
+  
+}
+
+
+.prices:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  
+  z-index: -1;
+  animation: animatedgradient 1s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.moves{
+	
+	clear:both;
+	width: 75%;
+	padding-top: 8px;
+	margin: 0 auto;
+	background-color:#d5d2ed;
+	margin-top:8px;
+	height:33%;
+	text-align:center;
+}
+
+.candle {
+	width:25%;
+	float:left;
+	margin-left: 25px;
+}
+.salt{
+	width:25%;
+	float:right;
+	margin-right:50px;
+	margin-bottom: 50px;
+}
+
+
