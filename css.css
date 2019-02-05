@@ -357,8 +357,8 @@ top: 6px;
 	  float:center;
 	clear:both;
 	width:55%;
-	height:103%;
-
+	height:108%;
+	padding:30px;
 	padding-top: 8px;
 	margin: 0 auto;
 	 background-color:#fff0d8;
@@ -400,7 +400,7 @@ top: 6px;
 	  position:relative;
 	  float:left;
 bottom:150px;
-	left:250px;
+	left:290px;
 	  font-size:23px;
   }
   
