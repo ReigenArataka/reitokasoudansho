@@ -466,4 +466,17 @@ clear:both;
   animation: animatedgradient 1s ease alternate infinite;
   background-size: 300% 300%;
 }
+
+.return{
+
+	padding:5px;
+	width:15%;
+	text-align:center;
+	margin:auto;
+	background-color:#d4f6fc;
+}
+.shopbg{
+	background: url(http://joepeacock.com/wp-content/uploads/2017/04/IMG_6009.gif) repeat, url(https://static.tumblr.com/91c86b76c086535806e5c9044f6d064e/rfnjdth/Fp5o3mxqv/tumblr_static_tumblr_static__640.gif) center center fixed no-repeat;
+ background-size: 100px 100px, cover;
+}
   /* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/holidays/hol-1/hol18.cur), auto !important;} /* End http://www.cursors-4u.com */
