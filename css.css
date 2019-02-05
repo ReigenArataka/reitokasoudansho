@@ -267,4 +267,203 @@ margin-left:85px;
 	margin-bottom: 50px;
 }
 
+.shopSign{
+	clear:both;
+	width: 10%;
+	height: 39%;
+	padding-top: 8px;
+	margin: 0 auto;
+	margin-top: 15px;
+ vertical-align: text-top;
+ animation:argh-my-eyes3 1s infinite;
+ background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  
+  z-index: -1;
+  animation: animatedgradient 1s ease alternate infinite;
+  background-size: 300% 300%;
+}
 
+.yen{
+	vertical-align:bottom;
+ float:left;
+}
+
+.yen2{
+	
+	
+}
+@-webkit-keyframes argh-my-eyes3 {
+    0%   { background-color: #5dd3ae; }
+    49% { background-color:#5dd3ae; }
+    50% { background-color: #b8d153; }
+    99% { background-color: #b8d153; }
+    100% { background-color: #5dd3ae; }
+  }
+  @-moz-keyframes argh-my-eyes3 {
+    0%   { background-color:#5dd3ae; }
+    49% { background-color: #5dd3ae; }
+    50% { background-color: #b8d153; }
+    99% { background-color:#b8d153; }
+    100% { background-color: #5dd3ae; }
+  }
+  @keyframes argh-my-eyes3 {
+    0%   { background-color: #5dd3ae; }
+    49% { background-color: #5dd3ae; }
+    50% { background-color: #b8d153; }
+    99% { background-color: #b8d153; }
+    100% { background-color: #5dd3ae; }
+  }
+
+  .shopText{
+	 position: relative;
+top: 6px; 	
+	  
+  }
+  
+  .shopHead{
+	 
+	  margin: auto;
+	   margin-top:30px;
+	   font-size:40px;
+		width: 40%;
+		height:13%;
+	  text-align:center;
+	  background-color:#e5d3e8;
+	  
+	 display: flex;
+  justify-content: center;
+  align-items: center;
+  --borderWidth: 5px;
+
+  position: relative;
+	  
+  }
+  
+  .shopHead:after{
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  
+  z-index: -1;
+  animation: animatedgradient 0.5s ease alternate infinite;
+  background-size: 300% 300%;
+  }
+  
+  .sbody1{
+	  float:center;
+	clear:both;
+	width:55%;
+	height:103%;
+
+	padding-top: 8px;
+	margin: 0 auto;
+	 background-color:#fff0d8;
+	 text-align:center;
+	 
+	
+	 border: 6px solid white;
+  }
+  
+  .saltpackage{
+	  width:20%;
+	  display:inline-block;
+	  margin-top:50px;
+	  margin-left:15px;
+  }
+  
+  .spackageText{
+	  display:inline-block;
+	  margin-top:120px;
+	  margin-left:10px;
+	  float:left;
+	  font-size:23px;
+  }
+  hr{
+	  border-top: 3px solid green;
+  }
+  
+  .oil{
+	  display:inline-block;
+	  position:relative;
+	  float:left;
+	  width:20%;
+	  margin-top:150px;
+	  margin-right:150px;
+	  right:200px;
+  }
+  .oiltext{
+	  display:inline-block;
+	  position:relative;
+	  float:left;
+bottom:150px;
+	left:250px;
+	  font-size:23px;
+  }
+  
+  .token{
+	  display:inline-block;
+	  position:relative;
+	  float:left;
+	  width:25%;
+	  top:55px;
+	  right:665px;
+  }
+  .tokenText{
+	  display:inline-block;
+	  position:relative;
+	  bottom:90px;
+	  font-size:23px;
+	  left:130px;
+  }
+  .saletime{
+	  font-size:35px;
+	  animation: blinker 1s step-start infinite;
+  }
+
+
+@keyframes blinker {
+  50% {
+    color:red;
+  }
+  100%{
+	 color:blue;
+  }
+}
+
+.donate{
+	padding-bottom:10px;
+	font-size:20px;
+clear:both;
+	width: 25%;
+	height:5%;
+	padding-top: 8px;
+	margin: 0 auto;
+	margin-top: 50px;
+	 background-color:#fff0d8;
+	 text-align:center;
+	 
+	 display: flex;
+  justify-content: center;
+  align-items: center;
+  --borderWidth: 2px;
+
+  position: relative;
+}
+.donate:after{
+	content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  
+  z-index: -1;
+  animation: animatedgradient 1s ease alternate infinite;
+  background-size: 300% 300%;
+}
+  /* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/holidays/hol-1/hol18.cur), auto !important;} /* End http://www.cursors-4u.com */
