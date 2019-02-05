@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
+.harmP{
+	width:85%;
+	bottom:20px;
+}
+
 body {
 	background-image: url("bg2.png");
   background-repeat: repeat;
@@ -67,7 +72,7 @@ color: black;
 .lovedone{
 	
 	width: 530px;
-	height: 225px;
+	height: 235px;
 	float:left;
 	background-color:yellow;
 	margin-left: 10px;
@@ -129,6 +134,7 @@ color: black;
 	
 }
 
+
 .base4 {
 	clear:both;
 	width: 65%;
@@ -139,7 +145,7 @@ color: black;
 
 .stiff{
 	width: 580px;
-	height: 185px;
+	height: 205px;
 	float:left;
 	background-color:#c89ce9;
 	margin-left: 10px;
@@ -198,13 +204,19 @@ margin-left:85px;
 	margin: 0 auto;
 }
 
+
+.execute{
+margin-bottom:20px;
+}
+
 .prices {
+	 
 	height:35%;
 	width:80%;
 	background-color:#eaecbd;
 	text-align:left;
 	padding-left: 20px;
-	padding-top: 20px;
+
 	
 	 display: flex;
   justify-content: center;
