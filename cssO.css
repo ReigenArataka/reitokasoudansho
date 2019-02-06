@@ -1,6 +1,8 @@
 body{
 	background-image:url("opener/bg.png");
     background-repeat: repeat;
+	overflow: hidden;
+	
 }
 
 .header{
@@ -19,16 +21,19 @@ body{
 	width: 50%;
 	margin:auto;
 	text-align:center;
+	overflow: hidden;
 }
 
 .welcome{
 	text-align:center;
 	width: 50%;
 	margin:auto;
+	overflow: hidden;
 
 }
 
 .enter{
+	overflow: hidden;
 	clear:both;
 	
 	width: 33%;
@@ -42,3 +47,14 @@ body{
 	width: 30%;
 	margin:auto;
 }
+
+.dot{
+  width:35px;
+  height:35px;
+  position:absolute;
+  background: url(https://i.imgur.com/sH2NVY2.gif);
+  background-size: 100% 100%;
+}
+
+#container {width:100%; height:100%; }
+#logo{ left:50%; top:50%; position:absolute; border-radius:10px; }
