@@ -497,6 +497,7 @@ clear:both;
 	background-color:#cecece;
 	padding: 10px;
 	width:50%;
+	border: 3px solid black;
 }
 hr{
 	border-top: 3px solid purple;
