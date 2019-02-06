@@ -9,390 +9,64 @@
                  
 <!DOCTYPE HTML>
 <html>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-<style type="text/css">
-
-
-body {
-    background-image:url('https://cdn.discordapp.com/attachments/398763317738340365/535412367627124746/text.png');
-    background-repeat: repeat;
-}
-
-container {
-    width: 800px;
-    margin-top: 50px;
-    margin-left: 250px;
-    font-size: 10px;
-    font-family: 'Press Start 2P', cursive;;
-    display: block;
-    text-align: center;
-}
-
-h1 {
-    color: #a6cacd;
-    font-family: 'Press Start 2P', cursive;;
-}
-
-a {
-    color: #98fefe;
-    font-size: 12px;
-    text-shadow: 2px 2px #000;
-}
-
-b { 
-    color: #f2012e;
-    font-size: 18px;
-    text-decoration: underline;
-
-}
-
-#credit {
-    position: fixed;
-    padding: 4px;
-    width: 15px;
-    right: 10px;
-    bottom: 10px;
-}
-
-h1,h2{
-  text-align:center;
-}
-
-h1{
-  color:rgba(100, 50, 255, .8);
-  font-family: 'Pacifico', cursive;
-  color:#212121;
-}
-.rainbow {
-  
-   /* Font options */
-  font-family: 'Press Start 2P', cursive;
-  font-size:40px;
-  
-   /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 3s infinite; 
-  
-  /* Internet Explorer */
-  -ms-animation: rainbow 3s infinite;
-  
-  /* Standar Syntax */
-  animation: rainbow 3s infinite; 
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-  30%{color: #87a4cc;}
-	40%{color: yellow;}
-  50%{color: coral;}
-	60%{color: green;}
-  70%{color: cyan;}
-  80%{color: #ffcdcd;}
-  90%{color: Blue;}
-	100%{color: orange;}
-}
-
-/* Internet Explorer */
-@-ms-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	100%{color: orange;}
-}
-
-/* Standar Syntax */
-@keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	100%{color: orange;}
-}
-
-body{
-  background-color:#607D8B;
-}
-
-.glow {
-  font-size: 40px;
-  color: #fff;
-  font-family: 'Press Start 2P', cursive;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #04fe04, 0 0 20px #04fe04, 0 0 30px #04fe04, 0 0 40px #04fe04, 0 0 50px #04fe04;
-  }
-  to {
-    text-shadow: 0 0 20px #4639f8, 0 0 30px #4639f8, 0 0 40px #4639f8, 0 0 50px #4639f8;
-  }
-
-</style>
+    <link rel="stylesheet" href="cssO.css">
 <body>
-  
-<script type="text/javascript">
-// <![CDATA[
-var colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
-var sparkles=50;
-
-/****************************
-*  Tinkerbell Magic Sparkle *
-*(c)2005-13 mf2fm web-design*
-*  http://www.mf2fm.com/rv  *
-* DON'T EDIT BELOW THIS BOX *
-****************************/
-var x=ox=400;
-var y=oy=300;
-var swide=800;
-var shigh=600;
-var sleft=sdown=0;
-var tiny=new Array();
-var star=new Array();
-var starv=new Array();
-var starx=new Array();
-var stary=new Array();
-var tinyx=new Array();
-var tinyy=new Array();
-var tinyv=new Array();
-
-window.onload=function() { if (document.getElementById) {
-  var i, rats, rlef, rdow;
-  for (var i=0; i<sparkles; i++) {
-    var rats=createDiv(3, 3);
-    rats.style.visibility="hidden";
-    rats.style.zIndex="999";
-    document.body.appendChild(tiny[i]=rats);
-    starv[i]=0;
-    tinyv[i]=0;
-    var rats=createDiv(5, 5);
-    rats.style.backgroundColor="transparent";
-    rats.style.visibility="hidden";
-    rats.style.zIndex="999";
-    var rlef=createDiv(1, 5);
-    var rdow=createDiv(5, 1);
-    rats.appendChild(rlef);
-    rats.appendChild(rdow);
-    rlef.style.top="2px";
-    rlef.style.left="0px";
-    rdow.style.top="0px";
-    rdow.style.left="2px";
-    document.body.appendChild(star[i]=rats);
-  }
-  set_width();
-  sparkle();
-}}
-
-function sparkle() {
-  var c;
-  if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
-    ox=x;
-    oy=y;
-    for (c=0; c<sparkles; c++) if (!starv[c]) {
-      star[c].style.left=(starx[c]=x)+"px";
-      star[c].style.top=(stary[c]=y+1)+"px";
-      star[c].style.clip="rect(0px, 5px, 5px, 0px)";
-      star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor=(colour=="random")?newColour():colour;
-      star[c].style.visibility="visible";
-      starv[c]=50;
-      break;
-    }
-  }
-  for (c=0; c<sparkles; c++) {
-    if (starv[c]) update_star(c);
-    if (tinyv[c]) update_tiny(c);
-  }
-  setTimeout("sparkle()", 40);
-}
-
-function update_star(i) {
-  if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
-  if (starv[i]) {
-    stary[i]+=1+Math.random()*3;
-    starx[i]+=(i%5-2)/5;
-    if (stary[i]<shigh+sdown) {
-      star[i].style.top=stary[i]+"px";
-      star[i].style.left=starx[i]+"px";
-    }
-    else {
-      star[i].style.visibility="hidden";
-      starv[i]=0;
-      return;
-    }
-  }
-  else {
-    tinyv[i]=50;
-    tiny[i].style.top=(tinyy[i]=stary[i])+"px";
-    tiny[i].style.left=(tinyx[i]=starx[i])+"px";
-    tiny[i].style.width="2px";
-    tiny[i].style.height="2px";
-    tiny[i].style.backgroundColor=star[i].childNodes[0].style.backgroundColor;
-    star[i].style.visibility="hidden";
-    tiny[i].style.visibility="visible"
-  }
-}
-
-function update_tiny(i) {
-  if (--tinyv[i]==25) {
-    tiny[i].style.width="1px";
-    tiny[i].style.height="1px";
-  }
-  if (tinyv[i]) {
-    tinyy[i]+=1+Math.random()*3;
-    tinyx[i]+=(i%5-2)/5;
-    if (tinyy[i]<shigh+sdown) {
-      tiny[i].style.top=tinyy[i]+"px";
-      tiny[i].style.left=tinyx[i]+"px";
-    }
-    else {
-      tiny[i].style.visibility="hidden";
-      tinyv[i]=0;
-      return;
-    }
-  }
-  else tiny[i].style.visibility="hidden";
-}
-
-document.onmousemove=mouse;
-function mouse(e) {
-  if (e) {
-    y=e.pageY;
-    x=e.pageX;
-  }
-  else {
-    set_scroll();
-    y=event.y+sdown;
-    x=event.x+sleft;
-  }
-}
-
-window.onscroll=set_scroll;
-function set_scroll() {
-  if (typeof(self.pageYOffset)=='number') {
-    sdown=self.pageYOffset;
-    sleft=self.pageXOffset;
-  }
-  else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
-    sdown=document.body.scrollTop;
-    sleft=document.body.scrollLeft;
-  }
-  else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
-    sleft=document.documentElement.scrollLeft;
-    sdown=document.documentElement.scrollTop;
-  }
-  else {
-    sdown=0;
-    sleft=0;
-  }
-}
-
-window.onresize=set_width;
-function set_width() {
-  var sw_min=999999;
-  var sh_min=999999;
-  if (document.documentElement && document.documentElement.clientWidth) {
-    if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
-    if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
-  }
-  if (typeof(self.innerWidth)=='number' && self.innerWidth) {
-    if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
-    if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
-  }
-  if (document.body.clientWidth) {
-    if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
-    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
-  }
-  if (sw_min==999999 || sh_min==999999) {
-    sw_min=800;
-    sh_min=600;
-  }
-  swide=sw_min;
-  shigh=sh_min;
-}
-
-function createDiv(height, width) {
-  var div=document.createElement("div");
-  div.style.position="absolute";
-  div.style.height=height+"px";
-  div.style.width=width+"px";
-  div.style.overflow="hidden";
-  return (div);
-}
-
-function newColour() {
-  var c=new Array();
-  c[0]=255;
-  c[1]=Math.floor(Math.random()*256);
-  c[2]=Math.floor(Math.random()*(256-c[1]/2));
-  c.sort(function(){return (0.5 - Math.random());});
-  return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
-}
-// ]]>
-
-
-
-</script>
-    </div>
-
-
-    <div id="img-left"></div>
-    
-    <container>
-
-            <p><img src="https://cdn.discordapp.com/attachments/398763317738340365/535445631242862603/ezgif-4-f5e05200d51c.gif" style="height:75px"><img src="https://media.discordapp.net/attachments/398763317738340365/535445626075480064/ezgif-4-d1ad54f989bb.gif" style="height:75px">
-            
-            <img src="https://cdn.discordapp.com/attachments/398763317738340365/535479845061263395/Untitlfed-1.png" style="height:75px" >
-            
-            <img src="https://cdn.discordapp.com/attachments/398763317738340365/535445903218049027/ezgif-4-d18f28e11e5d.gif" style="height:75px"><img src="https://cdn.discordapp.com/attachments/398763317738340365/535445622451470336/ezgif-4-130157155b0a.gif" style="height:75px"></p>
-            
-            
-            <!-- you can change the info here to a bio like thing -->
-            <p>the star psychic of the 21st century</p>
-            <p>who defeated <b>the Dragger</b></p>
-            <p>&nbsp</p>
-            
-            <!-- change "kyrie" to your own name
-            you can also change "rainbow" to "glow" -->
-            <p><a>welcome to </a><h1 class="rainbow">REIGEN'S</h1><a>homepage!</a>
-            <p>&nbsp</p>
-            
-            <!-- this is the right-facing arrow -->
-            <p><img src="https://cdn.discordapp.com/attachments/398763317738340365/535432055283122176/ezgif-4-56fd338ce182.gif"><img src="https://cdn.discordapp.com/attachments/398763317738340365/535432055283122176/ezgif-4-56fd338ce182.gif">
-            
-            <!-- THIS ONE IS IMPORTANT, IT IS THE ENTER BUTTON
-                 REPLACE MY URL WITH YOURS-->
-            <a href="https://reigenarataka.github.io/reitokasoudansho/main.html"><img src="https://cdn.discordapp.com/attachments/398763317738340365/535456277799895049/cooltext312201120587744.png"></a>
-            
-            <!-- this is the left facing arrow -->
-            <img src="https://cdn.discordapp.com/attachments/398763317738340365/535432057325879316/ezgif-4-8e52bd84e12d.gif"</p><img src="https://cdn.discordapp.com/attachments/398763317738340365/535432057325879316/ezgif-4-8e52bd84e12d.gif"</p>
-            <p>&nbsp</p>
-            
-            <!-- this is the visitor counter. read below -->
-            
-            <p>you're the number <!-- Start of CuterCounter Code -->
-<a href="http://www.cutercounter.com/" target="_blank"><img src="http://www.cutercounter.com/hit.php?id=grmnfopd&nd=6&style=24" border="0" alt="website counter"></a>
-<!-- End of CuterCounter Code --> visitor to this page.</p>
-            
-<!-- YOU NEED TO GO TO THE WEBSITE (CLICK THE COUNTER) AND PUT IN YOUR OWN URL AND REPLACE THIS PART OF THE CODE OR IT WILL ONLY SHOW THE COUNTER FOR THE PREVIEW BLOG. LEAVE THE <p> AND </p> THERE-->
-
-
-            <!-- these are the falling stars. 
-            you can remove them if you want or just 
-            fuck with the numbers to change the speed -->
-
-
-            <!-- if you remove credit i will find and kill -->
-
-</container>
-<div id="credit"><a href="https://dmc5.tumblr.com">☣</a></div>
+<div class="header">
+<img src="opener/star1.gif"  alt="">
+<img src="opener/star2.gif"  alt="">
+<img src="opener/head.png"  width="45%"alt="">
+<img src="opener/star2.gif"  alt="">
+<img src="opener/star1.gif"  alt="">
+</div>
+<div class="headE">
+<font style="font-size:30px;">
+SPIRITS AND SUCH CONSULTATION
+</font>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="defeat">
+<font style="font-size:30px;">
+The star psychic of the 21st century who defeated </font>
+<br> 
+<font style="font-size:45px; color:red; font-weight:bold;">
+THE DRAGGER!!!
+</font>
+</div>
+<br>
+<br>
+<br>
+<div class="welcome">
+<font style="color:#6df5ff; font-size:38px;">
+Welcome to
+<br>
+<img src="opener/reigen.png"  alt="">'s
+<br>
+homepage!
+</div>
+</font>
+<br>
+<br>
+<div class="enter">
+<font style="font-size:30px;">
+<img src="opener/arrowR.gif"  alt="">
+<img src="opener/arrowR.gif"  alt="">
+<a href="main.html"><img src="opener/enter.png"  alt=""></a>
+<img src="opener/arrowL.gif"  alt="">
+<img src="opener/arrowL.gif"  alt="">
+</div>
 
 </body>
+<br>
+<br>
+
+<br>
+<br>
+<div class="counter">
+<p>You're the number <!-- Start of CuterCounter Code -->
+<a href="http://www.cutercounter.com/" target="_blank"><img src="http://www.cutercounter.com/hit.php?id=grmnfopd&nd=6&style=24" border="0" alt="website counter"></a>
+<!-- End of CuterCounter Code --> visitor to this page.</p>
+</div>
 </html>

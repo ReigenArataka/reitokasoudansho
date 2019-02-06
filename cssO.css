@@ -1,0 +1,44 @@
+body{
+	background-image:url("opener/bg.png");
+    background-repeat: repeat;
+}
+
+.header{
+	width: 53%;
+	margin:auto;
+}
+
+.headE{
+	width: 30%;
+	margin:auto;
+	
+}
+
+.defeat  {
+	font-family: "Courier New";
+	width: 50%;
+	margin:auto;
+	text-align:center;
+}
+
+.welcome{
+	text-align:center;
+	width: 50%;
+	margin:auto;
+
+}
+
+.enter{
+	clear:both;
+	
+	width: 33%;
+	margin:auto;
+
+}
+
+.counter{
+	clear:both;
+	
+	width: 30%;
+	margin:auto;
+}
