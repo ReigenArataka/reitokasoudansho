@@ -498,4 +498,7 @@ clear:both;
 	padding: 10px;
 	width:50%;
 }
+hr{
+	border-top: 3px solid purple;
+}
   /* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/holidays/hol-1/hol18.cur), auto !important;} /* End http://www.cursors-4u.com */
