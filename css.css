@@ -46,6 +46,21 @@ color: black;
 	
 }
 
+.award1 {
+	position: fixed;
+    bottom: 540px;	
+}
+
+.award2 {
+	position: fixed;
+    bottom: 280px;
+}
+
+.award3 {
+	position: fixed;
+    bottom: 20px;
+}
+
 .base2{
 	clear:both;
 	width: 60%;
