@@ -47,16 +47,19 @@ color: black;
 }
 
 .award1 {
+	z-index: -1;
 	position: fixed;
     bottom: 540px;	
 }
 
 .award2 {
+	z-index: -1;
 	position: fixed;
     bottom: 280px;
 }
 
 .award3 {
+	z-index: -1;
 	position: fixed;
     bottom: 20px;
 }
