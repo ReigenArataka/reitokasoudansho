@@ -5,6 +5,29 @@ body{
 	
 }
 
+.yokai {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:20%;
+}
+
+.description {
+	font: 800 40px Arial;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 4px;
+  text-align:center;
+}
+
+.yokaiDesc {
+	 text-align:center;
+	 font-size: 30px;
+	
+}
+
+.return {
+	text-align:center;
+}
 .header{
 	width: 53%;
 	margin:auto;
@@ -56,11 +79,13 @@ body{
   background-size: 100% 100%;
 }
 .scroll-down {
+	z-index: -1;
  height: 80px;	
  overflow: hidden;
  position: static;
 }
 .scroll-down .inner {
+	z-index: -1;
  position: absolute;
  width: 100%;
  height: 100%;
@@ -98,11 +123,13 @@ body{
  }
 }
 .scroll-down-left {
+	z-index: -1;
  height: 80px;	
  overflow: hidden;
  position: static;
 }
 .scroll-down-left .inner {
+	z-index: -1;
  position: absolute;
  width: 100%;
  height: 100%;
@@ -140,11 +167,13 @@ body{
  }
 }
 .scroll-down-right {
+	z-index: -1;
  height: 80px;	
  overflow: hidden;
  position: static;
 }
 .scroll-down-right .inner {
+	z-index: -1;
  position: absolute;
  width: 100%;
  height: 100%;
@@ -182,11 +211,13 @@ body{
  }
 }
 .group-one {
+	z-index: -1;
  height: 80px;	
  overflow: hidden;
  position: static;
 }
 .group-one .inner {
+	z-index: -1;
  position: absolute;
  width: 100%;
  height: 100%;
@@ -224,11 +255,13 @@ body{
  }
 }
 .solo-left {
+	z-index: -1;
  height: 80px;	
  overflow: hidden;
  position: static;
 }
 .solo-left .inner {
+	z-index: -1;
  position: absolute;
  width: 100%;
  height: 100%;
@@ -266,11 +299,13 @@ body{
  }
 }
 .solo-right {
+	z-index: -1;
  height: 80px;	
  overflow: hidden;
  position: static;
 }
 .solo-right .inner {
+	z-index: -1;
  position: absolute;
  width: 100%;
  height: 100%;
@@ -309,3 +344,4 @@ body{
  
 #container {width:100%; height:100%; }
 #logo{ left:50%; top:50%; position:absolute; border-radius:10px; }
+
